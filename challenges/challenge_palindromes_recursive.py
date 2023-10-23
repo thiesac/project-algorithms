@@ -10,5 +10,5 @@ def is_palindrome_recursive(word, low_index, high_index):
         )
 
 
-print(is_palindrome_recursive("coxinha", 0, len("coxinha") - 1))
-print(is_palindrome_recursive("radar", 0, len("radar") - 1))
+# print(is_palindrome_recursive("coxinha", 0, len("coxinha") - 1))
+# print(is_palindrome_recursive("radar", 0, len("radar") - 1))
