@@ -1,11 +1,19 @@
 def is_anagram(first_string, second_string):
+    if first_string == "" and second_string == "":
+        return "", "", False
+
     first_list = list(first_string.lower())
     second_list = list(second_string.lower())
 
     first_sorted = merge_sort(first_list)
     second_sorted = merge_sort(second_list)
 
-    return "".join(first_sorted), "".join(second_sorted)
+    if first_sorted == "" or second_sorted == "":
+        return "".join(first_string), "".join(second_string), False
+    elif first_sorted == second_sorted:
+        return "".join(first_sorted), "".join(second_sorted), True
+    else:
+        return "".join(first_sorted), "".join(second_sorted), False
 
 
 def merge(left_half, right_half):
@@ -49,4 +57,4 @@ def merge_sort(arr):
     return merge(left_half, right_half)
 
 
-print(is_anagram("amor", "Roma"))
+print(is_anagram("", ""))
