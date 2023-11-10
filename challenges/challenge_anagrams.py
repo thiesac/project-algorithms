@@ -55,6 +55,3 @@ def merge_sort(arr):
     right_half = merge_sort(arr[mid:])
 
     return merge(left_half, right_half)
-
-
-print(is_anagram("", ""))

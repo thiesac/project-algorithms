@@ -13,8 +13,3 @@ def is_palindrome_iterative(word):
         high -= 1
 
     return True
-
-
-# Test the function
-print(is_palindrome_iterative("coxinha"))
-print(is_palindrome_iterative("radar"))
