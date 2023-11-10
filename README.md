@@ -53,7 +53,6 @@ git clone https://github.com/thiesac/your-project.git
 cd your-project
 
 # Install dependencies
-# Include specific instructions for dependency installation, if applicable
 ```
 ## Contributing
 
